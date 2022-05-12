@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', monospace, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  width: 100%;
+  padding: 10px 0 50px 0;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+  color: #555;
+}
+
+h1 + p {
+  font-weight: bold;
+}
+
+#app {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+header input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #555;
+  outline: none !important;
+  font-size: 22px;
+  color: #666;
+}
+
+header input:focus {
+  border-bottom-color: #444;
+}
+
+.posts {
+  width: 100%;
+}
+
+.posts .post-list {
+  width: 100%;
+  list-style-type: none;
+}
+
+.posts .post-list .post-list-item {
+  padding: 10px 5px;
+  margin: 5px 0 20px 0;
+  width: 100%;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.posts .post-list .post-list-item .post-title {
+  font-weight: bold;
+  padding-bottom: 5px; 
+}
+
+.posts .post-list .post-list-item .post-body {
+  padding: 10px 0;
+}
+
+.posts .post-list .post-list-item .post-time {
+  padding-bottom: 5px;
+  color: #888;
+  font-style: italic;
+  font-weight: 200;
+  font-size: small;
+  text-align: right;
+}
+
+@media screen and (max-width: 460px) {
+  #app {
+    width: 98%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+}
